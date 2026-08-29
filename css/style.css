@@ -8444,13 +8444,13 @@ h1, h2, h3, h4, h5,
         background: #b3b3b3; }
   .owl-carousel.home-slider {
     position: relative;
-    height: 750px;
+    height: 100vh;
     z-index: 0; }
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      height: 750px;
+      height: 100vh;
       position: relative;
       z-index: 0; }
       @media (max-width: 1199.98px) {
@@ -8465,7 +8465,7 @@ h1, h2, h3, h4, h5,
         background: #000000;
         opacity: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
-        height: 750px;
+        height: 100vh;
         z-index: 0; }
         @media (max-width: 991.98px) {
           .owl-carousel.home-slider .slider-item .slider-text {
@@ -8474,6 +8474,10 @@ h1, h2, h3, h4, h5,
           width: 60%;
           position: relative;
           z-index: -1; }
+          @media (min-width: 992px) {
+            .owl-carousel.home-slider .slider-item .slider-text .one-third {
+              background-size: auto 90%;
+              background-position: center bottom; } }
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
             position: absolute;
             top: 0;
@@ -8642,6 +8646,38 @@ h1, h2, h3, h4, h5,
         background: rgba(255, 255, 255, 0.4); }
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
+
+.hero {
+  position: relative;
+  isolation: isolate; }
+  .hero:before,
+  .hero:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; }
+  .hero:before {
+    height: 280px;
+    z-index: 1;
+    background: radial-gradient(ellipse at 68% 100%, rgba(255, 189, 57, 0.16), transparent 55%);
+    mix-blend-mode: screen;
+    animation: hero-glow 5s ease-in-out infinite; }
+  .hero:after {
+    height: 190px;
+    z-index: 2;
+    background: linear-gradient(to bottom, transparent, #000000 92%); }
+
+@keyframes hero-glow {
+  0%, 100% { opacity: .35; }
+  50% { opacity: .8; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero:before {
+    animation: none; }
+}
 
 .hero-wrap {
   width: 100%;
