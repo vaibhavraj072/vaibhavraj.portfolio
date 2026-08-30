@@ -147,16 +147,16 @@
                 <span>About</span></a>
             </li>
             <li class="nav-item">
+              <a href="#project-section" class="nav-link">
+                <span>Projects</span></a>
+            </li>
+            <li class="nav-item">
               <a href="#resume-section" class="nav-link">
                 <span>Resume</span></a>
             </li>
             <li class="nav-item">
               <a href="#contact-section" class="nav-link">
-                <span>Contact</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#send-message" class="nav-link">
-                <span>Message me</span></a>
+                <span>Contact Me</span></a>
             </li>
           </ul>
         </div>
@@ -400,7 +400,7 @@
     </section>
 
     
-    <section class="ftco-section resume-modern-section" id="resume-section">
+    <section class="ftco-section resume-modern-section resume-legacy" aria-hidden="true">
       <div class="container">
         <div class="resume-modern ftco-animate">
           <div class="resume-intro">
@@ -635,6 +635,40 @@
       </div>
     </section>
 
+    <section class="ftco-section resume-modern-section" id="resume-section">
+      <div class="container">
+        <div class="resume-modern ftco-animate">
+          <div class="resume-intro">
+            <p class="resume-kicker">02 / Resume</p>
+            <h2>A curious builder with a<br><em>product-first</em> mindset.</h2>
+            <p>I’m building a strong foundation in software engineering while creating polished, useful experiences for the web.</p>
+            <div class="resume-availability"><span></span> Open to internships, freelance work &amp; collaborations</div>
+          </div>
+          <div class="resume-timeline">
+            <div class="resume-timeline-heading"><span>Education journey</span><span>2022 — present</span></div>
+            <article class="resume-journey-card resume-current">
+              <div class="resume-card-top"><span class="resume-date">2023 — 2027</span><span class="resume-marker">Now</span></div>
+              <h3>Bachelor of Technology<br>in Computer Science</h3>
+              <p class="resume-institution">IILM University</p>
+              <p class="resume-description">Developing core computer science knowledge while building practical web products and creative side projects.</p>
+              <div class="resume-tags"><span>Web development</span><span>Problem solving</span><span>UI/UX</span></div>
+            </article>
+            <article class="resume-journey-card">
+              <div class="resume-card-top"><span class="resume-date">2022 — 2023</span><span class="resume-marker">01</span></div>
+              <h3>Higher Secondary School</h3>
+              <p class="resume-institution">CBSE · PCM</p>
+              <p class="resume-description">Completed senior secondary education with a focus on Physics, Chemistry, and Mathematics.</p>
+              <div class="resume-tags"><span>First class</span><span>PCM</span></div>
+            </article>
+          </div>
+          <div class="resume-footer-row">
+            <div class="resume-stats"><span><strong>2027</strong>Expected graduation</span><span><strong>6+</strong>Core technologies</span></div>
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing" class="resume-cv-link">Download CV <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <style>
       .video-container {
         display: block;
@@ -739,7 +773,46 @@
         <img src="https://ghchart.rshah.org/vaibhavraj072?theme=dark" alt="GitHub Contribution Chart" style="width: 80%; height: auto;" />
       </div>
   </section> --> -->
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <section class="ftco-section contact-modern-section" id="contact-section">
+      <div class="container">
+        <div class="contact-modern ftco-animate">
+          <div class="contact-modern-info">
+            <p class="contact-kicker">03 / Contact</p>
+            <h2>Have an idea?<br><em>Let’s make it real.</em></h2>
+            <p class="contact-lead">Whether it’s a product idea, a creative collaboration, or a quick question—my inbox is open.</p>
+            <span class="contact-availability"><i></i> Typically replies within 24 hours</span>
+
+            <div class="contact-details-list">
+              <a href="mailto:vaibhavraj2396@gmail.com"><span class="contact-detail-icon">@</span><span><small>Email</small>vaibhavraj2396@gmail.com</span><b>↗</b></a>
+              <a href="tel:9335181752"><span class="contact-detail-icon">✆</span><span><small>Phone</small>+91 933-518-1752</span><b>↗</b></a>
+              <div><span class="contact-detail-icon">⌖</span><span><small>Based in</small>Greater Noida, India</span></div>
+            </div>
+
+            <div class="contact-social-row">
+              <span>Find me online</span>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/">LinkedIn</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vaibhav_rraj/">Instagram</a>
+            </div>
+          </div>
+
+          <div class="contact-modern-form" id="send-message">
+            <div class="contact-form-heading"><span>Send a message</span><p>Tell me a little about what you’re building.</p></div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="fae3a4e0-95d4-4aa7-b77a-eb33b139b19e">
+              <div class="contact-form-grid">
+                <label>Full name <input type="text" name="fullname" placeholder="Your name" required></label>
+                <label>Email address <input type="email" name="email" placeholder="you@example.com" required></label>
+                <label class="contact-form-full">Subject <input type="text" name="subject" placeholder="What would you like to talk about?" required></label>
+                <label class="contact-form-full">Your message <textarea name="message" rows="5" placeholder="Share a few details…" required></textarea></label>
+              </div>
+              <div class="contact-form-action"><span>Fields marked are required</span><button type="submit">Send message <b aria-hidden="true">↗</b></button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb contact-legacy" aria-hidden="true">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
