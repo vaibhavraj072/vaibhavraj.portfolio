@@ -1,272 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Vaibhav Raj Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Vaibhav Raj Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="images/my_logo.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/aos.css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
 
-    <style>
-      /*======================================
+  <style>
+    /*======================================
 //--//-->   ABOUT
 ======================================*/
 
-      .about-mf .box-shadow-full {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
+    .about-mf .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
 
-      .about-mf .about-img {
-        margin-bottom: 2rem;
-      }
+    .about-mf .about-img {
+      margin-bottom: 2rem;
+    }
 
-      .about-mf .about-img img {
-        margin-left: 10px;
-      }
+    .about-mf .about-img img {
+      margin-left: 10px;
+    }
 
-      .skill-mf .progress {
-        /* background-color: #cde1f8; */
-        margin: 0.5rem 0 1.2rem;
-        border-radius: 0;
-        height: 0.7rem;
-      }
+    .skill-mf .progress {
+      /* background-color: #cde1f8; */
+      margin: 0.5rem 0 1.2rem;
+      border-radius: 0;
+      height: 0.7rem;
+    }
 
-      .skill-mf .progress .progress-bar {
-        height: 0.7rem;
-        background-color: #ffbd39;
-      }
+    .skill-mf .progress .progress-bar {
+      height: 0.7rem;
+      background-color: #ffbd39;
+    }
 
-      /* Animation styles */
-      #typing-animation {
-        position: relative;
-        font-size: 30px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(20, end) infinite;
-      }
+    /* Animation styles */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
 
-      #typing-animation:before {
-        content: "";
-        /* position: absolute; */
-        top: 0;
-        left: 0;
+    #typing-animation:before {
+      content: "";
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
+
+    @keyframes typing {
+      from {
         width: 0;
-        height: 100%;
-        background-color: #ccc;
-        animation: typing-cursor 0.5s ease-in-out infinite;
       }
 
-      @keyframes typing {
-        from {
-          width: 0;
-        }
+      to {
+        width: 100%;
+      }
+    }
 
-        to {
-          width: 100%;
-        }
+    @keyframes typing-cursor {
+      from {
+        width: 5px;
       }
 
-      @keyframes typing-cursor {
-        from {
-          width: 5px;
-        }
+      to {
+        width: 0;
+      }
+    }
 
-        to {
-          width: 0;
-        }
+    /* project image zoom effect */
+
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
+
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
+
+    @media screen and (orientation: portrait) {
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
       }
 
-      /* project image zoom effect */
-
-      .zoom-effect {
-        overflow: hidden;
-        transition: transform 0.3s ease-out;
+      .order-md-last {
+        visibility: hidden;
       }
 
-      .zoom-effect:hover {
-        transform: scale(1.1);
+      .about-img img {
+        content: url("images/about-me.png");
       }
+    }
+  </style>
 
-      @media screen and (orientation: portrait) {
-        body {
-          margin-left: 5%;
-          margin-right: 5%;
-        }
+</head>
 
-        .order-md-last {
-          visibility: hidden;
-        }
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-        .about-img img {
-          content: url("images/about-me.png");
-        }
-      }
-    </style>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images\my_logo.png" alt="My Logo">
+      </a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+        Menu
+      </button>
 
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images\my_logo.png" alt="My Logo">
-        </a>
-        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span>
-          Menu
-        </button>
-
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item">
-              <a href="#home-section" class="nav-link">
-                <span>Home</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link">
-                <span>About</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#project-section" class="nav-link">
-                <span>Projects</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#resume-section" class="nav-link">
-                <span>Resume</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact-section" class="nav-link">
-                <span>Contact Me</span></a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item">
+            <a href="#home-section" class="nav-link">
+              <span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-section" class="nav-link">
+              <span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#project-section" class="nav-link">
+              <span>Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume-section" class="nav-link">
+              <span>Resume</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="nav-link">
+              <span>Contact Me</span></a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <section id="home-section" class="hero">
-      <div class="home-slider  owl-carousel">
-        <div class="slider-item ">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/me.png);">
-                <div class="overlay"></div>
-              </div>
-              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                <div class="text">
-                  <span class="subheading">Hello!👋</span>
-                  <span class="hero-availability"><i></i> Available for collaboration</span>
-                  <h1 class="mb-4 mt-3">I'm
-                    <span>Vaibhav Raj</span></h1>
+    </div>
+  </nav>
+  <section id="home-section" class="hero">
+    <div class="home-slider  owl-carousel">
+      <div class="slider-item ">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+            data-scrollax-parent="true">
+            <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/me.png);">
+              <div class="overlay"></div>
+            </div>
+            <div class="one-forth d-flex  align-items-center ftco-animate"
+              data-scrollax=" properties: { translateY: '70%' }">
+              <div class="text">
+                <span class="subheading">Hello!👋</span>
+                <span class="hero-availability"><i></i> Available for collaboration</span>
+                <h1 class="mb-4 mt-3">I'm
+                  <span>Vaibhav Raj</span>
+                </h1>
 
-                  <!-- Element to contain animated typing -->
-                  <span id="typing-animation"></span>
+                <!-- Element to contain animated typing -->
+                <span id="typing-animation"></span>
 
-                  <script>
-                    // Initialize the typing animation
-                    const typingAnimationElement = document.getElementById('typing-animation');
+                <script>
+                  // Initialize the typing animation
+                  const typingAnimationElement = document.getElementById('typing-animation');
 
-                    // Create an array of typing text
-                    const typingTexts = ['a student       ', 'an Engineer        ','a Developer      ','a Freelancer      ','open-source enthusiast      ','UI/UX Designer    '];
+                  // Create an array of typing text
+                  const typingTexts = ['a student       ', 'an Engineer        ', 'a Developer      ', 'a Freelancer      ', 'open-source enthusiast      ', 'UI/UX Designer    '];
 
-                    // Create a function to display the typing animation for a given text
-                    function playTypingAnimation(text) {
-                      // Loop through each character and add it to the element
-                      for (let i = 0; i < text.length; i++) {
-                        setTimeout(() => {
-                          typingAnimationElement.textContent += text[i];
-                        }, i * 100); // Decreased delay to speed up the typing animation
-                      }
-
-                      // Once the animation is complete, reset the text and start over
+                  // Create a function to display the typing animation for a given text
+                  function playTypingAnimation(text) {
+                    // Loop through each character and add it to the element
+                    for (let i = 0; i < text.length; i++) {
                       setTimeout(() => {
-                        typingAnimationElement.textContent = '';
-                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                      }, text.length * 100); // Adjusted delay accordingly
+                        typingAnimationElement.textContent += text[i];
+                      }, i * 100); // Decreased delay to speed up the typing animation
                     }
 
-                    // Start the typing animation loop
-                    playTypingAnimation(typingTexts[0]);
-                  </script><br><br>
-                  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-                  <!-- <br> -->
-                  <p>
-                    <a target="_blank" href="https://www.instagram.com/vaibhav_rraj/" class="btn btn-primary py-3 px-4">My Instagram</a>
-                    <a target="_blank" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/" class="btn btn-white btn-outline-white py-3 px-4">My Linkedin</a>
-                  </p>
-                  <div class="hero-quick-facts" aria-label="Professional highlights">
-                    <span><strong>01</strong> Creative developer</span>
-                    <span><strong>02</strong> Based in India</span>
-                  </div>
+                    // Once the animation is complete, reset the text and start over
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                    }, text.length * 100); // Adjusted delay accordingly
+                  }
+
+                  // Start the typing animation loop
+                  playTypingAnimation(typingTexts[0]);
+                </script><br><br>
+                <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+                <!-- <br> -->
+                <p>
+                  <a target="_blank" href="https://www.instagram.com/vaibhav_rraj/" class="btn btn-primary py-3 px-4">My
+                    Instagram</a>
+                  <a target="_blank" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/"
+                    class="btn btn-white btn-outline-white py-3 px-4">My Linkedin</a>
+                </p>
+                <div class="hero-quick-facts" aria-label="Professional highlights">
+                  <span><strong>01</strong> Creative developer</span>
+                  <span><strong>02</strong> Based in India</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="hero-ambient" aria-hidden="true"><span></span><span></span><span></span></div>
-          <div class="hero-orbit" aria-hidden="true"><span>DESIGN • CODE • CREATE •</span><b>✦</b></div>
-          <a class="hero-scroll-cue" href="#about-section"><span>Scroll to explore</span><i aria-hidden="true"></i></a>
+        </div>
+        <div class="hero-ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="hero-orbit" aria-hidden="true"><span>DESIGN • CODE • CREATE •</span><b>✦</b></div>
+        <a class="hero-scroll-cue" href="#about-section"><span>Scroll to explore</span><i aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-about ftco-section" id="about-section">
+    <div class="container">
+      <div class="about-modern ftco-animate">
+        <aside class="about-profile-card">
+          <div class="about-portrait-wrap">
+            <img src="images/about-me.png" alt="Vaibhav Raj" class="about-portrait">
+            <span class="about-status"><i></i> Available to collaborate</span>
+          </div>
+          <div class="about-person">
+            <p class="about-kicker">Based in India</p>
+            <h3>Vaibhav Raj</h3>
+            <p>Software Developer &amp; Digital Artist</p>
+          </div>
+          <div class="about-skill-list" aria-label="Technical skills">
+            <span>JavaScript</span><span>Python</span><span>HTML/CSS</span>
+            <span>MongoDB</span><span>Firebase</span><span>UI/UX</span>
+          </div>
+        </aside>
+        <div class="about-content">
+          <div class="about-heading-row">
+            <p class="about-kicker">01 / About me</p>
+            <span class="about-location">Greater Noida, India</span>
+          </div>
+          <h2>Building useful digital experiences with <em>clarity</em> and character.</h2>
+          <p class="about-intro">I’m a Computer Science student who enjoys turning ideas into thoughtful web apps and
+            browser extensions. I combine clean code, strong visual instincts, and a curiosity for how people use
+            technology.</p>
+          <div class="about-focus-grid">
+            <article><span>Focus</span><strong>Web apps &amp;<br>browser extensions</strong></article>
+            <article><span>Currently exploring</span><strong>MERN stack &amp;<br>product design</strong></article>
+            <article><span>Education</span><strong>B.Tech, Computer<br>Science · 2027</strong></article>
+          </div>
+          <dl class="about-details">
+            <div>
+              <dt>Profile</dt>
+              <dd>Frontend Developer, Freelancer &amp; Digital Artist</dd>
+            </div>
+            <div>
+              <dt>Languages</dt>
+              <dd>English, Hindi</dd>
+            </div>
+            <div>
+              <dt>Beyond code</dt>
+              <dd>Travel photography, teaching, editing &amp; art</dd>
+            </div>
+          </dl>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/"
+            class="about-linkedin">Let’s connect <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </section>
-
-    <section class="ftco-about ftco-section" id="about-section">
-      <div class="container">
-        <div class="about-modern ftco-animate">
-          <aside class="about-profile-card">
-            <div class="about-portrait-wrap">
-              <img src="images/about-me.png" alt="Vaibhav Raj" class="about-portrait">
-              <span class="about-status"><i></i> Available to collaborate</span>
-            </div>
-            <div class="about-person">
-              <p class="about-kicker">Based in India</p>
-              <h3>Vaibhav Raj</h3>
-              <p>Software Developer &amp; Digital Artist</p>
-            </div>
-            <div class="about-skill-list" aria-label="Technical skills">
-              <span>JavaScript</span><span>Python</span><span>HTML/CSS</span>
-              <span>MongoDB</span><span>Firebase</span><span>UI/UX</span>
-            </div>
-          </aside>
-          <div class="about-content">
-            <div class="about-heading-row">
-              <p class="about-kicker">01 / About me</p>
-              <span class="about-location">Greater Noida, India</span>
-            </div>
-            <h2>Building useful digital experiences with <em>clarity</em> and character.</h2>
-            <p class="about-intro">I’m a Computer Science student who enjoys turning ideas into thoughtful web apps and browser extensions. I combine clean code, strong visual instincts, and a curiosity for how people use technology.</p>
-            <div class="about-focus-grid">
-              <article><span>Focus</span><strong>Web apps &amp;<br>browser extensions</strong></article>
-              <article><span>Currently exploring</span><strong>MERN stack &amp;<br>product design</strong></article>
-              <article><span>Education</span><strong>B.Tech, Computer<br>Science · 2027</strong></article>
-            </div>
-            <dl class="about-details">
-              <div><dt>Profile</dt><dd>Frontend Developer, Freelancer &amp; Digital Artist</dd></div>
-              <div><dt>Languages</dt><dd>English, Hindi</dd></div>
-              <div><dt>Beyond code</dt><dd>Travel photography, teaching, editing &amp; art</dd></div>
-            </dl>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/" class="about-linkedin">Let’s connect <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="about-legacy" aria-hidden="true">
+      <div class="about-legacy" aria-hidden="true">
         <div class="row">
           <div class="row d-flex align-items-stretch">
             <!-- <div class="row d-flex"> -->
@@ -285,16 +304,19 @@
                         <p>
                           <span class="title-s">Name:
                           </span>
-                          <span>Vaibhav Raj</span></p>
+                          <span>Vaibhav Raj</span>
+                        </p>
                         <p>
                           <span class="title-s">Job Role:
                           </span>
-                          <span>Software Developer</span></p>
+                          <span>Software Developer</span>
+                        </p>
                         <p>
                           <!-- <span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> <p> -->
                           <span class="title-s">Address:
                           </span>
-                          <span>Greater Noida, U.P</span></p>
+                          <span>Greater Noida, U.P</span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -304,19 +326,22 @@
                     <span>HTML</span>
                     <!-- <span class="pull-right">85%</span> -->
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-              <!-- here the percent will show the filled part  -->
+                    <!-- here the percent will show the filled part  -->
                     <span>CSS</span>
                     <!-- <span class="pull-right">95%</span> -->
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="95"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
 
                     <span>Python</span>
                     <!-- <span class="pull-right">85%</span> -->
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
 
                     <!-- <span>PHP</span> -->
@@ -328,20 +353,23 @@
                     <span>JavaScript</span>
                     <!-- <span class="pull-right">99%</span> -->
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    
+
                     <span>MongoDB</span>
                     <!-- <span class="pull-right">99%</span> -->
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    
-                    
+
+
                     <span>C</span>
                     <!-- <span class="pull-right">99%</span> -->
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -355,30 +383,40 @@
                   <h1 class="big">About</h1>
                   <h2 class="mb-4">About Me</h2>
 
-<!-- (pura bio st up krna hai)yha pe apna about me add krna hai ye dusre kisi ka hai net uthaya hua   -->
-                  <p>I’m a Computer Science student passionate about crafting innovative solutions like browser extensions and web apps. Proficient in JavaScript, Firebase, and design frameworks like Tailwind and Bootstrap, with experience in Python, C++, Java, and SQL. Eager to contribute to impactful tech projects and constantly grow my skills.
+                  <!-- (pura bio st up krna hai)yha pe apna about me add krna hai ye dusre kisi ka hai net uthaya hua   -->
+                  <p>I’m a Computer Science student passionate about crafting innovative solutions like browser
+                    extensions and web apps. Proficient in JavaScript, Firebase, and design frameworks like Tailwind and
+                    Bootstrap, with experience in Python, C++, Java, and SQL. Eager to contribute to impactful tech
+                    projects and constantly grow my skills.
                   </p>
                   <ul class="about-info mt-4 px-md-0 px-2">
                     <li class="d-flex">
                       <span>Profile:</span>
-                      <span>Frontend Developer, Freelancer &amp; Digital Artist</span></li>
+                      <span>Frontend Developer, Freelancer &amp; Digital Artist</span>
+                    </li>
                     <li class="d-flex">
                       <span>Domain:</span>
-                      <span>Software Developement</span></li>
+                      <span>Software Developement</span>
+                    </li>
                     <li class="d-flex">
                       <span>Education:</span>
-                      <span>Bachelor of Techonology(Computer Science)</span></li>
+                      <span>Bachelor of Techonology(Computer Science)</span>
+                    </li>
                     <li class="d-flex">
                       <span>Language:</span>
-                      <span>English, Hindi</span></li>
+                      <span>English, Hindi</span>
+                    </li>
                     <!-- <li class="d-flex"> <span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
                     <li class="d-flex">
                       <span>Other Skills:</span>
                       <span>
-                        Observational skills, Creativity, Knowledge of art fundamentals, Technical proficiency, Communication skills, Time management, Adaptability &amp; Attention to detail</span></li>
+                        Observational skills, Creativity, Knowledge of art fundamentals, Technical proficiency,
+                        Communication skills, Time management, Adaptability &amp; Attention to detail</span>
+                    </li>
                     <li class="d-flex">
                       <span>Interest:</span>
-                      <span>Traveling, Travel Photography, Teaching, Editing</span></li>
+                      <span>Traveling, Travel Photography, Teaching, Editing</span>
+                    </li>
 
                   </ul>
                 </div>
@@ -388,65 +426,78 @@
                 <div class="text">
                   <!-- <p class="mb-4"> <span class="number" data-number="30">0</span> <span>+</span> <span>&nbsp; Projects completed</span> </p> -->
                   <p>
-                    <a target="_blank" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/" class="btn btn-primary py-3 px-3">LinkedIn</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/"
+                      class="btn btn-primary py-3 px-3">LinkedIn</a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section resume-modern-section resume-legacy" aria-hidden="true">
+    <div class="container">
+      <div class="resume-modern ftco-animate">
+        <div class="resume-intro">
+          <p class="resume-kicker">02 / Resume</p>
+          <h2>A curious builder with a<br><em>product-first</em> mindset.</h2>
+          <p>I’m building a strong foundation in software engineering while creating polished, useful experiences for
+            the web.</p>
+          <div class="resume-availability"><span></span> Open to internships, freelance work &amp; collaborations</div>
+        </div>
+
+        <div class="resume-timeline">
+          <div class="resume-timeline-heading">
+            <span>Education journey</span>
+            <span>2022 — present</span>
+          </div>
+          <article class="resume-journey-card resume-current">
+            <div class="resume-card-top"><span class="resume-date">2023 — 2027</span><span
+                class="resume-marker">Now</span></div>
+            <h3>Bachelor of Technology<br>in Computer Science</h3>
+            <p class="resume-institution">IILM University</p>
+            <p class="resume-description">Developing core computer science knowledge while building practical web
+              products and creative side projects.</p>
+            <div class="resume-tags"><span>Web development</span><span>Problem solving</span><span>UI/UX</span></div>
+          </article>
+          <article class="resume-journey-card">
+            <div class="resume-card-top"><span class="resume-date">2022 — 2023</span><span
+                class="resume-marker">01</span></div>
+            <h3>Higher Secondary School</h3>
+            <p class="resume-institution">CBSE · PCM</p>
+            <p class="resume-description">Completed senior secondary education with a focus on Physics, Chemistry, and
+              Mathematics.</p>
+            <div class="resume-tags"><span>First class</span><span>PCM</span></div>
+          </article>
+        </div>
+
+        <div class="resume-footer-row">
+          <div class="resume-stats"><span><strong>2027</strong>Expected graduation</span><span><strong>6+</strong>Core
+              technologies</span></div>
+          <a target="_blank" rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing"
+            class="resume-cv-link">Download CV <span aria-hidden="true">↓</span></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    
-    <section class="ftco-section resume-modern-section resume-legacy" aria-hidden="true">
-      <div class="container">
-        <div class="resume-modern ftco-animate">
-          <div class="resume-intro">
-            <p class="resume-kicker">02 / Resume</p>
-            <h2>A curious builder with a<br><em>product-first</em> mindset.</h2>
-            <p>I’m building a strong foundation in software engineering while creating polished, useful experiences for the web.</p>
-            <div class="resume-availability"><span></span> Open to internships, freelance work &amp; collaborations</div>
-          </div>
-
-          <div class="resume-timeline">
-            <div class="resume-timeline-heading">
-              <span>Education journey</span>
-              <span>2022 — present</span>
-            </div>
-            <article class="resume-journey-card resume-current">
-              <div class="resume-card-top"><span class="resume-date">2023 — 2027</span><span class="resume-marker">Now</span></div>
-              <h3>Bachelor of Technology<br>in Computer Science</h3>
-              <p class="resume-institution">IILM University</p>
-              <p class="resume-description">Developing core computer science knowledge while building practical web products and creative side projects.</p>
-              <div class="resume-tags"><span>Web development</span><span>Problem solving</span><span>UI/UX</span></div>
-            </article>
-            <article class="resume-journey-card">
-              <div class="resume-card-top"><span class="resume-date">2022 — 2023</span><span class="resume-marker">01</span></div>
-              <h3>Higher Secondary School</h3>
-              <p class="resume-institution">CBSE · PCM</p>
-              <p class="resume-description">Completed senior secondary education with a focus on Physics, Chemistry, and Mathematics.</p>
-              <div class="resume-tags"><span>First class</span><span>PCM</span></div>
-            </article>
-          </div>
-
-          <div class="resume-footer-row">
-            <div class="resume-stats"><span><strong>2027</strong>Expected graduation</span><span><strong>6+</strong>Core technologies</span></div>
-            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing" class="resume-cv-link">Download CV <span aria-hidden="true">↓</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb resume-legacy" aria-hidden="true">
-      <div class="container">
+  <section class="ftco-section ftco-no-pb resume-legacy" aria-hidden="true">
+    <div class="container">
       <div class="row justify-content-center pb-5">
         <div class="col-md-10 heading-section text-center ftco-animate">
-        <h1 class="big big-2">Resume</h1>
-        <h2 class="mb-4">Resume</h2>
-        <!-- show here the main part of the resume that  mainly "summarize the resume" -->
-        <p>Full-Stack Developer, with expertise in MERN stack, JavaScript, and Firebase. Skilled in building responsive, user-centric web applications and browser extensions. Experienced in crafting modern UI/UX with HTML, CSS, Tailwind, and Bootstrap. Strong command over Python, Java, C, and MongoDB, with a proven track record in leading hackathons, mentoring peers, and delivering client-focused tech solutions. Passionate about creating intuitive digital experiences and driving innovation through clean, scalable code.</p>
+          <h1 class="big big-2">Resume</h1>
+          <h2 class="mb-4">Resume</h2>
+          <!-- show here the main part of the resume that  mainly "summarize the resume" -->
+          <p>Full-Stack Developer, with expertise in MERN stack, JavaScript, and Firebase. Skilled in building
+            responsive, user-centric web applications and browser extensions. Experienced in crafting modern UI/UX with
+            HTML, CSS, Tailwind, and Bootstrap. Strong command over Python, Java, C, and MongoDB, with a proven track
+            record in leading hackathons, mentoring peers, and delivering client-focused tech solutions. Passionate
+            about creating intuitive digital experiences and driving innovation through clean, scalable code.</p>
         </div>
       </div>
 
@@ -489,279 +540,301 @@
 
       <!-- <br>
       <br> -->
-    </section>
+  </section>
 
-    <section class="resume-legacy" aria-hidden="true">
-        <div class="row">
-          <h1 class="big-4">Education</h1>
-          <div class="underline"></div>
-        </div>
-        <br>
+  <section class="resume-legacy" aria-hidden="true">
+    <div class="row">
+      <h1 class="big-4">Education</h1>
+      <div class="underline"></div>
+    </div>
+    <br>
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2023-2027</span>
-              <h2>Bachelor of Technology(Computer science)</h2>
-              <span class="position">IILM University</span>
-              <p class="mt-4">Graduation Year 2027</p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2022-2023</span>
-              <h2>Higher Secondary School</h2>
-              <span class="position">CBSE (PCM)</span>
-              <p class="mt-4">Grade: First class.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 text-center ftco-animate">
-            <p>
-              <a target="_blank" href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a>
-            </p>
-          </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2023-2027</span>
+          <h2>Bachelor of Technology(Computer science)</h2>
+          <span class="position">IILM University</span>
+          <p class="mt-4">Graduation Year 2027</p>
         </div>
       </div>
-    </section>
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Featured projects using JavaScript, Python, MERN Stack, Web Development and Machine Learning.</p>
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">2022-2023</span>
+          <h2>Higher Secondary School</h2>
+          <span class="position">CBSE (PCM)</span>
+          <p class="mt-4">Grade: First class.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6 text-center ftco-animate">
+        <p>
+          <a target="_blank" href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing"
+            class="btn btn-primary py-4 px-5">Download CV</a>
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="project-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Projects</h1>
+          <h2 class="mb-4">Projects</h2>
+          <p>Featured projects using JavaScript, Python, MERN Stack, Web Development and Machine Learning.</p>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <!-- Project 1 -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="https://github.com/vaibhavraj072/AutoScroll" class="block-20 zoom-effect"
+              style="background-image: url('./images/Auto Scroll.png');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading">
+                <a href="https://github.com/vaibhavraj072/AutoScroll">Auto Scroller for reel and shorts</a>
+              </h3>
+              <p>A browser extension designed to automate scrolling for reels, YouTube Shorts, and other content,
+                enhancing user convenience and experience.</p>
+            </div>
           </div>
         </div>
-        <div class="row d-flex">
-          <!-- Project 1 -->
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="https://github.com/vaibhavraj072/AutoScroll" class="block-20 zoom-effect" style="background-image: url('./images/Auto Scroll.png');"></a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading">
-                  <a href="https://github.com/vaibhavraj072/AutoScroll">Auto Scroller for reel and shorts</a>
-                </h3>
-                <p>A browser extension designed to automate scrolling for reels, YouTube Shorts, and other content, enhancing user convenience and experience.</p>
-              </div>
+        <!-- Project 2 -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="https://github.com/vaibhavraj072/autoplay_pause" class="block-20 zoom-effect"
+              style="background-image: url('./images/auto play pause.png');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading">
+                <a href="https://github.com/vaibhavraj072/autoplay_pause">Seamless Video Control: Auto Play-Pause for an
+                  Enhanced Viewing Experience</a>
+              </h3>
+              <p>A browser extension that auto-pauses videos when you switch tabs and resumes them on return for
+                seamless control.</p>
             </div>
           </div>
-          <!-- Project 2 -->
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="https://github.com/vaibhavraj072/autoplay_pause" class="block-20 zoom-effect" style="background-image: url('./images/auto play pause.png');"></a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading">
-                  <a href="https://github.com/vaibhavraj072/autoplay_pause">Seamless Video Control: Auto Play-Pause for an Enhanced Viewing Experience</a>
-                </h3>
-                <p>A browser extension that auto-pauses videos when you switch tabs and resumes them on return for seamless control.</p>
-              </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry">
+            <a href="https://github.com/vaibhavraj072/color_picker" class="block-20 zoom-effect"
+              style="background-image: url('./images/color picker2.png');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading">
+                <a href="https://github.com/vaibhavraj072/color_picker">Color Picker Extension: Identify and Extract
+                  Color Codes (RGB & Hex)</a>
+              </h3>
+              <p>The Color Picker Extension lets you identify and copy RGB and Hex color codes from any webpage easily.
+              </p>
             </div>
           </div>
-          <!-- Project 3 -->
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry">
-              <a href="https://github.com/vaibhavraj072/color_picker" class="block-20 zoom-effect" style="background-image: url('./images/color picker2.png');"></a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading">
-                  <a href="https://github.com/vaibhavraj072/color_picker">Color Picker Extension: Identify and Extract Color Codes (RGB & Hex)</a>
-                </h3>
-                <p>The Color Picker Extension lets you identify and copy RGB and Hex color codes from any webpage easily.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Project 4 -->
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-              <a href="https://github.com/vaibhavraj072/regime-detection" class="block-20 zoom-effect" style="background-image: url('./images/regime_detection.png');"></a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading">
-                  <a href="https://github.com/vaibhavraj072/regime-detection">Market Regime Detection System</a>
-                </h3>
-                <p>
-                  <strong>Detect and visualize financial market behavior shifts using unsupervised ML</strong><br>
-                  <!-- <span style="font-size: 14px; color: #555;">
+        </div>
+        <!-- Project 4 -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="https://github.com/vaibhavraj072/regime-detection" class="block-20 zoom-effect"
+              style="background-image: url('./images/regime_detection.png');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading">
+                <a href="https://github.com/vaibhavraj072/regime-detection">Market Regime Detection System</a>
+              </h3>
+              <p>
+                <strong>Detect and visualize financial market behavior shifts using unsupervised ML</strong><br>
+                <!-- <span style="font-size: 14px; color: #555;">
                     A Python-based analytics project using clustering algorithms to detect and label financial market regimes.
                     Includes regime-wise visualization and interpretation, helping analysts and traders understand market conditions over time.
                   </span> -->
-                </p>
-                <ul style="list-style-type: none; padding: 0; margin: 0;">
-                  <li style="margin-bottom: 5px;">
-                    <strong>Tools Used:</strong>
-                    <span style="color: #999;">Python, Scikit-learn, Pandas, Matplotlib, Seaborn</span>
-                  </li>
-                  <li>
-                    <strong>Techniques:</strong>
-                    <span style="color: #999;">Clustering, Time-Series Analysis, Data Visualization</span>
-                  </li>
-                </ul>
-              </div>
+              </p>
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 5px;">
+                  <strong>Tools Used:</strong>
+                  <span style="color: #999;">Python, Scikit-learn, Pandas, Matplotlib, Seaborn</span>
+                </li>
+                <li>
+                  <strong>Techniques:</strong>
+                  <span style="color: #999;">Clustering, Time-Series Analysis, Data Visualization</span>
+                </li>
+              </ul>
             </div>
           </div>
-            <!-- Project 5 -->
-            <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry">
-              <a href="https://github.com/vaibhavraj072/Envestapp" class="block-20 zoom-effect" style="background-image: url('./images/EnvestApp.png');"></a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading">
-                  <a href="https://github.com/vaibhavraj072/Envestapp">Envestapp</a>
-                </h3>
-                <p>
-                  <strong>Scrape, filter, and analyze stock market news with AI-powered sentiment insights tailored to user portfolios</strong><br>
-                  <!-- <span style="font-size: 14px; color: #555;">
+        </div>
+        <!-- Project 5 -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry">
+            <a href="https://github.com/vaibhavraj072/Envestapp" class="block-20 zoom-effect"
+              style="background-image: url('./images/EnvestApp.png');"></a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading">
+                <a href="https://github.com/vaibhavraj072/Envestapp">Envestapp</a>
+              </h3>
+              <p>
+                <strong>Scrape, filter, and analyze stock market news with AI-powered sentiment insights tailored to
+                  user portfolios</strong><br>
+                <!-- <span style="font-size: 14px; color: #555;">
                     A Python-based analytics project using clustering algorithms to detect and label financial market regimes.
                     Includes regime-wise visualization and interpretation, helping analysts and traders understand market conditions over time.
                   </span> -->
-                </p>
-                <ul style="list-style-type: none; padding: 0; margin: 0;">
-                  <li style="margin-bottom: 5px;">
-                    <strong>Tools Used:</strong>
-                    <span style="color: #999;">Node.js, Express.js, MongoDB, React, OpenAI API, NewsAPI</span>
-                  </li>
-                  <li>
-                    <strong>Techniques:</strong>
-                    <span style="color: #999;">Web Scraping, Portfolio Integration, Sentiment Analysis, Data Filtering, API Integration</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+              </p>
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 5px;">
+                  <strong>Tools Used:</strong>
+                  <span style="color: #999;">Node.js, Express.js, MongoDB, React, OpenAI API, NewsAPI</span>
+                </li>
+                <li>
+                  <strong>Techniques:</strong>
+                  <span style="color: #999;">Web Scraping, Portfolio Integration, Sentiment Analysis, Data Filtering,
+                    API Integration</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+  </section>
 
-    <section class="ftco-section resume-modern-section" id="resume-section">
-      <div class="container">
-        <div class="resume-modern ftco-animate">
-          <div class="resume-intro">
-            <p class="resume-kicker">02 / Resume</p>
-            <h2>A curious builder with a<br><em>product-first</em> mindset.</h2>
-            <p>I’m building a strong foundation in software engineering while creating polished, useful experiences for the web.</p>
-            <div class="resume-availability"><span></span> Open to internships, freelance work &amp; collaborations</div>
-          </div>
-          <div class="resume-timeline">
-            <div class="resume-timeline-heading"><span>Education journey</span><span>2022 — present</span></div>
-            <article class="resume-journey-card resume-current">
-              <div class="resume-card-top"><span class="resume-date">2023 — 2027</span><span class="resume-marker">Now</span></div>
-              <h3>Bachelor of Technology<br>in Computer Science</h3>
-              <p class="resume-institution">IILM University</p>
-              <p class="resume-description">Developing core computer science knowledge while building practical web products and creative side projects.</p>
-              <div class="resume-tags"><span>Web development</span><span>Problem solving</span><span>UI/UX</span></div>
-            </article>
-            <article class="resume-journey-card">
-              <div class="resume-card-top"><span class="resume-date">2022 — 2023</span><span class="resume-marker">01</span></div>
-              <h3>Higher Secondary School</h3>
-              <p class="resume-institution">CBSE · PCM</p>
-              <p class="resume-description">Completed senior secondary education with a focus on Physics, Chemistry, and Mathematics.</p>
-              <div class="resume-tags"><span>First class</span><span>PCM</span></div>
-            </article>
-          </div>
-          <div class="resume-footer-row">
-            <div class="resume-stats"><span><strong>2027</strong>Expected graduation</span><span><strong>6+</strong>Core technologies</span></div>
-            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing" class="resume-cv-link">Download CV <span aria-hidden="true">↓</span></a>
-          </div>
+  <section class="ftco-section resume-modern-section" id="resume-section">
+    <div class="container">
+      <div class="resume-modern ftco-animate">
+        <div class="resume-intro">
+          <p class="resume-kicker">02 / Resume</p>
+          <h2>A curious builder with a<br><em>product-first</em> mindset.</h2>
+          <p>I’m building a strong foundation in software engineering while creating polished, useful experiences for
+            the web.</p>
+          <div class="resume-availability"><span></span> Open to internships, freelance work &amp; collaborations</div>
+        </div>
+        <div class="resume-timeline">
+          <div class="resume-timeline-heading"><span>Education journey</span><span>2022 — present</span></div>
+          <article class="resume-journey-card resume-current">
+            <div class="resume-card-top"><span class="resume-date">2023 — 2027</span><span
+                class="resume-marker">Now</span></div>
+            <h3>Bachelor of Technology<br>in Computer Science</h3>
+            <p class="resume-institution">IILM University</p>
+            <p class="resume-description">Developing core computer science knowledge while building practical web
+              products and creative side projects.</p>
+            <div class="resume-tags"><span>Web development</span><span>Problem solving</span><span>UI/UX</span></div>
+          </article>
+          <article class="resume-journey-card">
+            <div class="resume-card-top"><span class="resume-date">2022 — 2023</span><span
+                class="resume-marker">01</span></div>
+            <h3>Higher Secondary School</h3>
+            <p class="resume-institution">CBSE · PCM</p>
+            <p class="resume-description">Completed senior secondary education with a focus on Physics, Chemistry, and
+              Mathematics.</p>
+            <div class="resume-tags"><span>First class</span><span>PCM</span></div>
+          </article>
+        </div>
+        <div class="resume-footer-row">
+          <div class="resume-stats"><span><strong>2027</strong>Expected graduation</span><span><strong>6+</strong>Core
+              technologies</span></div>
+          <a target="_blank" rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing"
+            class="resume-cv-link">Download CV <span aria-hidden="true">↓</span></a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <style>
-      .video-container {
-        display: block;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-        position: relative;
-        border-radius: 10px;
-        overflow: hidden;
-      }
+  <style>
+    .video-container {
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      /* 16:9 Aspect Ratio */
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+    }
 
-      .project-video {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        top: 0;
-        left: 0;
-        border-radius: 10px;
-      }
-    </style>
+    .project-video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+    }
+  </style>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const videos = document.querySelectorAll(".project-video");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const videos = document.querySelectorAll(".project-video");
 
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              const video = entry.target;
-              if (entry.isIntersecting) {
-                video.play();
-              } else {
-                video.pause();
-              }
-            });
-          },
-          {
-            threshold: 0.5, // At least 50% visible
-          }
-        );
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              video.play();
+            } else {
+              video.pause();
+            }
+          });
+        },
+        {
+          threshold: 0.5, // At least 50% visible
+        }
+      );
 
-        videos.forEach((video) => {
-          observer.observe(video);
-        });
+      videos.forEach((video) => {
+        observer.observe(video);
       });
-    </script>
+    });
+  </script>
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="hid" style="visibility:hidden">
-        <div class="container">
-          <div class="row d-md-flex align-items-center">
-            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <strong class="number" data-number="20">0</strong>
-                  <span>Achievements</span>
-                </div>
+  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <div class="hid" style="visibility:hidden">
+      <div class="container">
+        <div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
               </div>
             </div>
-            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div class="block-18">
-                <div class="text">
-                  <strong class="number" data-number="150">0</strong>
-                  <span>Templates</span>
-                </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="150">0</strong>
+                <span>Templates</span>
               </div>
             </div>
-            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
+          </div>
+          <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+      <!-- <div class="container"> -->
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <h2>Here's my<span>
+              <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
+            </span>
+          </h2>
+          <div class="heading">
+            <h4>
+              I blend code &amp; creativity to craft exceptional web experiences.
+            </h4>
+            <br>
           </div>
         </div>
       </div>
-
-      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-        <!-- <div class="container"> -->
-        <div class="row justify-content-center">
-          <div class="col-md-7 ftco-animate text-center">
-            <h2>Here's my<span>
-                <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
-              </span>
-            </h2>
-            <div class="heading">
-              <h4>
-                I blend code &amp; creativity to craft exceptional web experiences.
-              </h4>
-              <br>
-            </div>
-          </div>
-        </div>
-        <!-- </div> -->
-      </div>
-    </section>
-    <!-- <section class="github stats" id="github-stats">
+      <!-- </div> -->
+    </div>
+  </section>
+  <!-- <section class="github stats" id="github-stats">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -773,232 +846,268 @@
         <img src="https://ghchart.rshah.org/vaibhavraj072?theme=dark" alt="GitHub Contribution Chart" style="width: 80%; height: auto;" />
       </div>
   </section> --> -->
-    <section class="ftco-section contact-modern-section" id="contact-section">
-      <div class="container">
-        <div class="contact-modern ftco-animate">
-          <div class="contact-modern-info">
-            <p class="contact-kicker">03 / Contact</p>
-            <h2>Have an idea?<br><em>Let’s make it real.</em></h2>
-            <p class="contact-lead">Whether it’s a product idea, a creative collaboration, or a quick question—my inbox is open.</p>
-            <span class="contact-availability"><i></i> Typically replies within 24 hours</span>
+  <section class="ftco-section contact-modern-section" id="contact-section">
+    <div class="container">
+      <div class="contact-modern ftco-animate">
+        <div class="contact-modern-info">
+          <p class="contact-kicker">03 / Contact</p>
+          <h2>Have an idea?<br><em>Let’s make it real.</em></h2>
+          <p class="contact-lead">Whether it’s a product idea, a creative collaboration, or a quick question—my inbox is
+            open.</p>
+          <span class="contact-availability"><i></i> Typically replies within 24 hours</span>
 
-            <div class="contact-details-list">
-              <a href="mailto:vaibhavraj2396@gmail.com"><span class="contact-detail-icon">@</span><span><small>Email</small>vaibhavraj2396@gmail.com</span><b>↗</b></a>
-              <a href="tel:9335181752"><span class="contact-detail-icon">✆</span><span><small>Phone</small>+91 933-518-1752</span><b>↗</b></a>
-              <div><span class="contact-detail-icon">⌖</span><span><small>Based in</small>Greater Noida, India</span></div>
-            </div>
-
-            <div class="contact-social-row">
-              <span>Find me online</span>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/">LinkedIn</a>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vaibhav_rraj/">Instagram</a>
+          <div class="contact-details-list">
+            <a href="mailto:vaibhavraj2396@gmail.com"><span
+                class="contact-detail-icon">@</span><span><small>Email</small>vaibhavraj2396@gmail.com</span><b>↗</b></a>
+            <a href="tel:9335181752"><span class="contact-detail-icon">✆</span><span><small>Phone</small>+91
+                933-518-1752</span><b>↗</b></a>
+            <div><span class="contact-detail-icon">⌖</span><span><small>Based in</small>Greater Noida, India</span>
             </div>
           </div>
 
-          <div class="contact-modern-form" id="send-message">
-            <div class="contact-form-heading"><span>Send a message</span><p>Tell me a little about what you’re building.</p></div>
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="access_key" value="fae3a4e0-95d4-4aa7-b77a-eb33b139b19e">
-              <div class="contact-form-grid">
-                <label>Full name <input type="text" name="fullname" placeholder="Your name" required></label>
-                <label>Email address <input type="email" name="email" placeholder="you@example.com" required></label>
-                <label class="contact-form-full">Subject <input type="text" name="subject" placeholder="What would you like to talk about?" required></label>
-                <label class="contact-form-full">Your message <textarea name="message" rows="5" placeholder="Share a few details…" required></textarea></label>
-              </div>
-              <div class="contact-form-action"><span>Fields marked are required</span><button type="submit">Send message <b aria-hidden="true">↗</b></button></div>
-            </form>
+          <div class="contact-social-row">
+            <span>Find me online</span>
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/vaibhav-raj-08794b270/">LinkedIn</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vaibhav_rraj/">Instagram</a>
           </div>
+        </div>
+
+        <div class="contact-modern-form" id="send-message">
+          <div class="contact-form-heading"><span>Send a message</span>
+            <p>Tell me a little about what you’re building.</p>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="fae3a4e0-95d4-4aa7-b77a-eb33b139b19e">
+            <div class="contact-form-grid">
+              <label>Full name <input type="text" name="fullname" placeholder="Your name" required></label>
+              <label>Email address <input type="email" name="email" placeholder="you@example.com" required></label>
+              <label class="contact-form-full">Subject <input type="text" name="subject"
+                  placeholder="What would you like to talk about?" required></label>
+              <label class="contact-form-full">Your message <textarea name="message" rows="5"
+                  placeholder="Share a few details…" required></textarea></label>
+            </div>
+            <div class="contact-form-action"><span>Fields marked are required</span><button type="submit">Send message
+                <b aria-hidden="true">↗</b></button></div>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="ftco-section contact-section ftco-no-pb contact-legacy" aria-hidden="true">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Let’s Turn Ideas Into Reality!</p>
+  <section class="ftco-section contact-section ftco-no-pb contact-legacy" aria-hidden="true">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Contact</h1>
+          <h2 class="mb-4">Contact Me</h2>
+          <p>Let’s Turn Ideas Into Reality!</p>
+        </div>
+      </div>
+
+      <div class="row d-flex contact-info mb-5">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-map-signs"></span>
+            </div>
+            <h3 class="mb-4">Address</h3>
+            <p>Greater Noida, U.P</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <a href="tel:9335181752"><span class="icon-phone2"></span></a>
+            </div>
+            <h3 class="mb-4">Contact Number</h3>
+            <p>
+              <a href="tel:9335181752">+91 933-518-1752</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-paper-plane"></span>
+            </div>
+            <h3 class="mb-4">Email Address</h3>
+            <p>
+              <a href="mailto:vaibhavraj2396@gmail.com">vaibhavraj2396@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-globe"></span>
+            </div>
+            <h3 class="mb-4">Download Resume</h3>
+            <p>
+              <a target="_blank"
+                href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing">Resume
+                link</a>
+            </p>
           </div>
         </div>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-map-signs"></span>
-              </div>
-              <h3 class="mb-4">Address</h3>
-              <p>Greater Noida, U.P</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <a href="tel:9335181752"><span class="icon-phone2"></span></a>
-              </div>
-              <h3 class="mb-4">Contact Number</h3>
-              <p>
-                <a href="tel:9335181752">+91 933-518-1752</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <h3 class="mb-4">Email Address</h3>
-              <p>
-                <a href="mailto:vaibhavraj2396@gmail.com">vaibhavraj2396@gmail.com</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-globe"></span>
-              </div>
-              <h3 class="mb-4">Download Resume</h3>
-              <p>
-                <a target="_blank" href="https://drive.google.com/file/d/11TW51DHXpEUzyxAVOEjhrT4ePYoF7iEu/view?usp=sharing">Resume link</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="container">
-            <br>
-            <br>
-            <div class="row justify-content-center">
-              <div class="col-md-7 ftco-animate text-center">
-                <h2>Have Questions? I’ve Got Answers!<span>
-                  </span>
-                </h2>
-                <div class="que" id="send-message">
-                  <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="fae3a4e0-95d4-4aa7-b77a-eb33b139b19e">
-                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                      <div class="col-12">
-                        <label for="fullname" class="form-label">Full Name
-                          <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required="required">
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <label for="email" class="form-label">Email
-                          <span class="text-danger">*</span></label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewbox="0 0 16 16">
-                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                            </svg>
-                          </span>
-                          <input type="email" class="form-control" id="email" name="email" value="" required="required">
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewbox="0 0 16 16">
-                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                            </svg>
-                          </span>
-                          <input type="tel" class="form-control" id="phone" name="phone" value="">
-                        </div>
-                      </div><br>
-                      <div class="col-12">
-                        <label for="subject" class="form-label">Subject
-                          <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
-                      </div>
-                      <div class="col-12">
-                        <label for="message" class="form-label">Message
-                          <span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
-                      </div>
-                      <div class="col-12">
-                        <div class="d-grid"><br>
-                          <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
-                        </div>
+        <div class="container">
+          <br>
+          <br>
+          <div class="row justify-content-center">
+            <div class="col-md-7 ftco-animate text-center">
+              <h2>Have Questions? I’ve Got Answers!<span>
+                </span>
+              </h2>
+              <div class="que" id="send-message">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="fae3a4e0-95d4-4aa7-b77a-eb33b139b19e">
+                  <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                    <div class="col-12">
+                      <label for="fullname" class="form-label">Full Name
+                        <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="fullname" name="fullname" value=""
+                        required="required">
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="email" class="form-label">Email
+                        <span class="text-danger">*</span></label>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope" viewbox="0 0 16 16">
+                            <path
+                              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                          </svg>
+                        </span>
+                        <input type="email" class="form-control" id="email" name="email" value="" required="required">
                       </div>
                     </div>
-                  </form>
-                </div>
+                    <div class="col-12 col-md-6">
+                      <label for="phone" class="form-label">Phone Number</label>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone" viewbox="0 0 16 16">
+                            <path
+                              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                          </svg>
+                        </span>
+                        <input type="tel" class="form-control" id="phone" name="phone" value="">
+                      </div>
+                    </div><br>
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Subject
+                        <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
+                    </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message
+                        <span class="text-danger">*</span></label>
+                      <textarea class="form-control" id="message" name="message" rows="3"
+                        required="required"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-grid"><br>
+                        <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                      </div>
+                    </div>
               </div>
             </div>
-            <br>
-            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-              <li class="ftco-animate normal-txt">Find me on
-              </li>
-              <!-- <li class="ftco-animate"> <a href="https://www.youtube.com/channel/UCCuk2jKrw8V9_YSvRMm4GvA"> <span class="icon-youtube"></span></a> </li> -->
-              <li class="ftco-animate">
-                <a target="_blank" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/">
-                  <span class="icon-linkedin"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a target="_blank" href="https://x.com/vaibhav__rraj">
-                  <span class="icon-twitter"></span></a>
-              </li>
-              <!-- <li class="ftco-animate"> <a href="https://www.facebook.com/profile.php?id=100045124180382"> <span class="icon-facebook"></span></a> </li> -->
-              <li class="ftco-animate">
-                <a target="_blank" href="https://www.instagram.com/vaibhav_rraj/">
-                  <span class="icon-instagram"></span></a>
-              </li>
-            </ul>
-            <br>
-            </div>
           </div>
         </div>
-      </section>
-  
-        <footer class="ftco-footer ftco-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
+      </div>
+    </div>
+  </section>
 
-              <p style="display: none;">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>
-                  document.write(new Date().getFullYear());
-                </script>
-                All rights reserved | This template is made with
-                <i class="icon-heart color-danger" aria-hidden="true"></i>
-                by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
-            </div>
-          </div>
+  <footer class="custom-lc-footer">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Col 1: Navigation -->
+        <div class="col-6 col-md-4">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#resume-section">Resume</a></li>
+            <li><a href="#contact-section">Contact Me</a></li>
+          </ul>
         </div>
-      </footer>
 
-      <!-- loader -->
-      <div id="ftco-loader" class="show fullscreen">
-        <svg class="circular" width="48px" height="48px">
-          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-          <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
+        <!-- Col 2: Featured Projects -->
+        <div class="col-6 col-md-4">
+          <h4 class="footer-col-title">Projects</h4>
+          <ul class="footer-links-list">
+            <li><a target="_blank" href="https://github.com/vaibhavraj072/AutoScroll">Auto Scroller</a></li>
+            <li><a target="_blank" href="https://github.com/vaibhavraj072/autoplay_pause">Autoplay Pause</a></li>
+            <li><a target="_blank" href="https://github.com/vaibhavraj072/color_picker">Color Picker</a></li>
+            <li><a target="_blank" href="https://github.com/vaibhavraj072/regime-detection">Market Regime</a></li>
+            <li><a target="_blank" href="https://github.com/vaibhavraj072/Envestapp">EnvestApp</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Connect -->
+        <div class="col-6 col-md-4">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-links-list">
+            <li><a target="_blank" href="https://www.linkedin.com/in/vaibhav-raj-08794b270/">LinkedIn</a></li>
+            <li><a target="_blank" href="https://x.com/vaibhav__rraj">Twitter / X</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/vaibhav_rraj/">Instagram</a></li>
+            <li><a target="_blank" href="https://github.com/vaibhavraj072">GitHub</a></li>
+            <li><a href="mailto:vaibhavraj2396@gmail.com">Email Me</a></li>
+          </ul>
+        </div>
       </div>
 
-      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery-migrate-3.0.1.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/jquery.animateNumber.min.js"></script>
-      <script src="js/scrollax.min.js"></script>
+      <!-- Giant Watermark Logo & Text -->
+      <div class="brand-watermark-row">
+        <div class="brand-watermark-wrap">
+          <svg class="brand-icon-svg" viewBox="0 0 100 100">
+            <path d="M50 15 C30 35, 30 65, 50 85 C70 65, 70 35, 50 15 Z M15 50 C35 30, 65 30, 85 50 C65 70, 35 70, 15 50 Z" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+          <div class="brand-outline-text">Vaibhav Raj</div>
+        </div>
+      </div>
 
-      <script src="js/main.js"></script>
-      <script>
-        function gitClick() {
-          window.location.href = 'https://github.com/vaibhavraj072?tab=overview&from=2024-06-01&to=2024-06-07';
-        }
-      </script>
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="status-indicator">
+          <span class="status-dot"></span> All systems operational
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    </body>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
 
-  </html>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    function gitClick() {
+      window.location.href = 'https://github.com/vaibhavraj072?tab=overview&from=2024-06-01&to=2024-06-07';
+    }
+  </script>
+
+</body>
+
+</html>
